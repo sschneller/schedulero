@@ -1,0 +1,26 @@
+group 'edu.oswego.cs.schedulero'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+run {
+    mainClassName = 'ServerLaunch'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+    compile 'org.slf4j:slf4j-simple:1.7.21'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'com.google.code.findbugs:jsr305:3.0.1'
+    compile group: 'com.sparkjava', name: 'spark-core', version: '2.5.5'
+    compile group: 'com.google.guava', name: 'guava', version: '21.0'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.0'
+}
